@@ -72,5 +72,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    #app.run(host="0.0.0.0", port=env.get("PORT", 3000))
-    app.run(host="https://pizza42alejandro.herokuapp.com", port=env.get("PORT", 8081))
+    app.run(host="0.0.0.0", port=env.get("PORT", 8081))
