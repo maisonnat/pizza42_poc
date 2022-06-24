@@ -1,18 +1,18 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Pizza 42</title>
+    <title>Pizza 42 🍕</title>
   </head>
   <body>
     {% if session %}
     <img src={{session.userinfo.picture}}>
-    <h1>Bienvenido, {{session.userinfo.nickname}}!</h1>
+    <h1>Bienvenido, {{session.userinfo.nickname}} 🍕!</h1>
     
 
     <p><a href="/logout" id="qsLogoutBtn">Salir</a></p>
     <div><pre>{{pretty}}</pre></div>
     {% else %}
-    <h1 id="profileDropDown">Bienvenido a Pizza 42</h1>
+    <h1 id="profileDropDown">Bienvenido a Pizza 42🍕</h1>
     <p><a href="/login" id="qsLoginBtn">Ingresar</a></p>
     {% endif %}
   </body>
