@@ -24,8 +24,8 @@ oauth.register(
     client_id=env.get("AUTH0_CLIENT_ID"),
     client_secret=env.get("AUTH0_CLIENT_SECRET"),
     client_kwargs={
-        #"scope": "openid profile email",
-        "scope": "openid profile email gender person user.gender.read",
+        #"scope": "openid profile email read:gender",
+        "scope" : "read:users update:users"
     },
     server_metadata_url=f'https://{env.get("AUTH0_DOMAIN")}/.well-known/openid-configuration',
 )
